@@ -32,7 +32,7 @@ different databases. Parameters of the operators are:
 - ``sql`` - single string, list of strings or string pointing to a template file to be executed;
 - ``autocommit`` (optional) if True, each command is automatically committed (default: False);
 - ``parameters`` (optional) the parameters to render the SQL query with.
-- ``handler`` (optional) the function that will be applied to the cursor. If it's ``None`` results won't returned (default: fetch_all_handler).
+- ``handler`` (optional) the function that will be applied to the cursor. If it's ``None`` results won't be returned (default: fetch_all_handler).
 - ``split_statements`` (optional) if split single SQL string into statements and run separately (default: False).
 - ``return_last`` (optional) depends ``split_statements`` and if it's ``True`` this parameter is used to return the result of only last statement or all split statements (default: True).
 
